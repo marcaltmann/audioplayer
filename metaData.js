@@ -2,8 +2,7 @@ const request = require('request');
 const OGG = require('ogg-parser');
 const seneca = require('seneca')();
 
-const plugin = function(options) {
-
+module.exports = function metaData(options) {
   this.add({role: 'metadata', cmd: 'get'}, (args, done) => {
     let url = args.url;
 
@@ -21,11 +20,4 @@ const plugin = function(options) {
       });
     });
   });
-
 };
-
-seneca.use(plugin);
-
-seneca.act({role: 'metadata', cmd: 'get', url: 'https://storage.googleapis.com/laomake-music-test/goldberg-variations/kimiko-ishizaka-01-aria.ogg'}, (err, res) => {
-  console.log(res);
-});
