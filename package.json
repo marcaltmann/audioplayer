@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/marcaltmann/audioplayer/issues"
   },
-  "homepage": "https://github.com/marcaltmann/audioplayer#readme"
+  "homepage": "https://github.com/marcaltmann/audioplayer#readme",
+  "dependencies": {
+    "seneca": "^3.4.1"
+  }
 }
