@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/marcaltmann/audioplayer#readme",
   "dependencies": {
+    "ogg-parser": "^0.3.1",
+    "request": "^2.81.0",
     "seneca": "^3.4.1"
   }
 }
